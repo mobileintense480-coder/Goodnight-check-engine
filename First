@@ -45,7 +45,11 @@
             <div style="background: white; padding: 15px; border-radius: 8px; width: 140px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
                 <span style="font-size: 30px;">🔧</span>
                 <h3 style="font-size: 16px; margin: 10px 0 5px;">General Repair</h3>
-                <p style="font-size: 12px; color: #666; margin: 0;">Maintenance & More</p>
+               <div style="margin-top: 30px; background: #eee; padding: 15px; border-radius: 8px;">
+    <h3 style="margin-top: 0;">📍 Service Area</h3>
+    <p style="margin-bottom: 0;">Proudly serving [Mesa] and surrounding areas within 50 miles.</p>
+</div>
+ <p style="font-size: 12px; color: #666; margin: 0;">Maintenance & More</p>
             </div>
         </div>
  <hr style="width: 50%; margin: 30px auto;">
