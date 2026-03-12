@@ -26,7 +26,29 @@
     <div class="container">
         <h2>Professional Mobile Service</h2>
         <p>Expert diagnostics and repair brought straight to your door.</p>
-        <hr style="width: 50%; margin: 30px auto;">
+               <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 20px;">
+            <div style="background: white; padding: 15px; border-radius: 8px; width: 140px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                <span style="font-size: 30px;">💻</span>
+                <h3 style="font-size: 16px; margin: 10px 0 5px;">Diagnostics</h3>
+                <p style="font-size: 12px; color: #666; margin: 0;">Full System Scans</p>
+            </div>
+            <div style="background: white; padding: 15px; border-radius: 8px; width: 140px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                <span style="font-size: 30px;">🛑</span>
+                <h3 style="font-size: 16px; margin: 10px 0 5px;">Brakes</h3>
+                <p style="font-size: 12px; color: #666; margin: 0;">Pads & Rotors</p>
+            </div>
+            <div style="background: white; padding: 15px; border-radius: 8px; width: 140px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                <span style="font-size: 30px;">⚡</span>
+                <h3 style="font-size: 16px; margin: 10px 0 5px;">Electrical</h3>
+                <p style="font-size: 12px; color: #666; margin: 0;">Batteries & Alternators</p>
+            </div>
+            <div style="background: white; padding: 15px; border-radius: 8px; width: 140px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                <span style="font-size: 30px;">🔧</span>
+                <h3 style="font-size: 16px; margin: 10px 0 5px;">General Repair</h3>
+                <p style="font-size: 12px; color: #666; margin: 0;">Maintenance & More</p>
+            </div>
+        </div>
+ <hr style="width: 50%; margin: 30px auto;">
         <p>© 2026 Goodnight Check Engine Light</p>
     </div>
 
