@@ -7,7 +7,16 @@
     <style>
         :root { --primary: #007bff; --secondary: #28a745; --dark: #1a1a1a; }
         body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; margin: 0; padding: 20px; }
-        .container { max-width: 600px; margin: auto; background: white; padding: 25px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        <div style="text-align: center; padding: 20px; background-color: #1a1a1a; color: white; border-bottom: 3px solid #d4af37;">
+    <img src="logo.png" alt="Goodnight Check Engine Light" style="width: 180px; border-radius: 10px; margin-bottom: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.5);">
+    <h1 style="margin: 0; font-size: 26px; letter-spacing: 1px;">Goodnight Check Engine Light</h1>
+    <p style="margin: 5px 0; font-style: italic; color: #d4af37;">Mobile Diagnostics & Repair</p>
+    
+    <a href="tel:YOUR-PHONE-NUMBER" style="display: inline-block; background-color: #28a745; color: white; padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 15px; font-size: 18px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+        📞 CALL NOW
+    </a>
+</div>
+.container { max-width: 600px; margin: auto; background: white; padding: 25px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
         h1 { color: var(--dark); text-align: center; }
         .form-group { margin-bottom: 15px; }
         input, select { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box; }
