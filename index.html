@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goodnight Check Engine Light</title>
     <style>
-        /* Base Styles */
+        /* Eliminates the white gaps at the edges */
         body { font-family: sans-serif; margin: 0; background-color: #f4f4f4; color: #333; overflow-x: hidden; }
         
-        /* EDGE-TO-EDGE HEADER */
-        .header { text-align: center; background-color: #1a1a1a; color: white; border-bottom: 4px solid #d4af37; padding: 0 0 25px 0; width: 100%; }
-        .full-width-logo { 
-            width: 100vw; 
+        /* EDGE-TO-EDGE HEADER FIX */
+        .header { text-align: center; background-color: #1a1a1a; color: white; border-bottom: 4px solid #d4af37; padding: 0 0 25px 0; }
+        
+        .logo-banner { 
+            width: 100%; 
             display: block;
             height: auto; 
-            max-height: 300px; 
-            object-fit: cover; 
+            max-height: 350px; /* Keeps it from being too tall on big phones */
+            object-fit: contain; /* FIXES RESOLUTION: No stretching or zooming */
+            background-color: #000000; /* Blends the photo edges into the header */
             margin-bottom: 20px;
         }
         
@@ -38,8 +40,8 @@
             text-decoration: none; 
             font-weight: bold; 
             box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
-            padding: 18px 0; 
-            font-size: 14px;
+            padding: 16px 0; 
+            font-size: 13px;
             text-transform: uppercase;
         }
         .btn-book { background-color: #d4af37; color: #1a1a1a; }
@@ -47,7 +49,7 @@
         .btn-text { background-color: #007bff; color: white; }
         .btn-call { background-color: #28a745; color: white; }
         
-        /* SERVICES SECTION */
+        /* SERVICES GRID */
         .container { padding: 30px 15px; text-align: center; }
         .services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 20px; }
         .service-card { background: white; padding: 15px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border: 1px solid #ddd; }
@@ -59,19 +61,21 @@
         .gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 20px; }
         .gallery-item { background: #ddd; border-radius: 8px; aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; border: 1px solid #ccc; }
         .gallery-label { position: absolute; bottom: 0; background: rgba(0,0,0,0.7); color: white; width: 100%; font-size: 11px; padding: 5px 0; }
+        
+        footer { margin-top: 50px; padding: 30px 0; background: #1a1a1a; color: #888; font-size: 12px; }
     </style>
 </head>
 <body>
 
     <div class="header">
-        <img src="logo.png" alt="Goodnight Check Engine Light" class="full-width-logo">
+        <img src="logo.png" alt="Goodnight Check Engine Light" class="logo-banner">
         
         <h1 style="margin:0; font-size: 24px; padding: 0 10px;">Goodnight Check Engine Light</h1>
         <p style="color: #d4af37; font-style: italic; margin: 5px 0;">Performance, Fabrication & Repair</p>
         
         <div class="button-grid">
-            <a href="YOUR_SQUARE_LINK" class="btn btn-book">📅 BOOK ONLINE</a>
-            <a href="YOUR_CAM_LINK" class="btn btn-cam">🎥 LIVE SHOP CAM</a>
+            <a href="YOUR_SQUARE_LINK_HERE" class="btn btn-book">📅 BOOK ONLINE</a>
+            <a href="YOUR_WYZE_CAM_LINK" class="btn btn-cam">🎥 LIVE SHOP CAM</a>
             <a href="sms:4804904715" class="btn btn-text">💬 TEXT US</a>
             <a href="tel:4804904715" class="btn btn-call">📞 CALL NOW</a>
         </div>
@@ -83,24 +87,24 @@
             <div class="service-card"><span class="service-icon">👨‍🏭</span><h3>Fabrication</h3><p>Custom Metal Work</p></div>
             <div class="service-card"><span class="service-icon">⚙️</span><h3>Engine Builds</h3><p>Full Rebuilds</p></div>
             <div class="service-card"><span class="service-icon">🏎️</span><h3>Performance</h3><p>Upgrades & Tuning</p></div>
-            <div class="service-card"><span class="service-icon">📋</span><h3>Maintenance</h3><p>Preventative Care</p></div>
+            <div class="service-card"><span class="service-icon">📋</span><h3>Preventative</h3><p>General Maintenance</p></div>
             <div class="service-card"><span class="service-icon">💻</span><h3>Diagnostics</h3><p>System Scans</p></div>
             <div class="service-card"><span class="service-icon">🛑</span><h3>Brakes</h3><p>Pads & Rotors</p></div>
             <div class="service-card"><span class="service-icon">⚡</span><h3>Electrical</h3><p>Batteries & Starters</p></div>
-            <div class="service-card"><span class="service-icon">🔧</span><h3>Repair</h3><p>General Fixes</p></div>
+            <div class="service-card"><span class="service-icon">🔧</span><h3>Repair</h3><p>Engine & Trans</p></div>
         </div>
 
         <h2 style="margin-top: 40px; border-bottom: 2px solid #d4af37; display: inline-block; padding-bottom: 5px;">Project Gallery</h2>
         <div class="gallery-grid">
-            <div class="gallery-item"><span>Photo 1</span><div class="gallery-label">Engine Build</div></div>
-            <div class="gallery-item"><span>Photo 2</span><div class="gallery-label">Custom Fab</div></div>
-            <div class="gallery-item"><span>Photo 3</span><div class="gallery-label">Performance</div></div>
-            <div class="gallery-item"><span>Photo 4</span><div class="gallery-label">Shop Work</div></div>
+            <div class="gallery-item"><span>Photo 1</span><div class="gallery-label">Engine Project</div></div>
+            <div class="gallery-item"><span>Photo 2</span><div class="gallery-label">Custom Weld</div></div>
+            <div class="gallery-item"><span>Photo 3</span><div class="gallery-label">Performance Part</div></div>
+            <div class="gallery-item"><span>Photo 4</span><div class="gallery-label">Shop View</div></div>
         </div>
 
-        <footer style="margin-top: 50px; padding-bottom: 20px; color: #888; font-size: 12px; background: #eee; padding-top: 20px;">
+        <footer>
             <p>© 2026 Goodnight Check Engine Light</p>
-            <p>Mesa, Arizona</p>
+            <p>Mesa, Arizona | Professional Mobile Service</p>
         </footer>
     </div>
 
