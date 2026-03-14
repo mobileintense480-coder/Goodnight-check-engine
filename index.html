@@ -5,19 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goodnight Check Engine Light</title>
     <style>
-        /* Eliminates the white gaps at the edges */
+        /* Reset margins and prevent horizontal scrolling */
         body { font-family: sans-serif; margin: 0; background-color: #f4f4f4; color: #333; overflow-x: hidden; }
         
-        /* EDGE-TO-EDGE HEADER FIX */
+        /* HEADER SECTION */
         .header { text-align: center; background-color: #1a1a1a; color: white; border-bottom: 4px solid #d4af37; padding: 0 0 25px 0; }
         
-        .logo-banner { 
+        /* LOGO FIX: Full image, original resolution, edge-to-edge */
+        .logo-original { 
             width: 100%; 
             display: block;
             height: auto; 
-            max-height: 350px; /* Keeps it from being too tall on big phones */
-            object-fit: contain; /* FIXES RESOLUTION: No stretching or zooming */
-            background-color: #000000; /* Blends the photo edges into the header */
             margin-bottom: 20px;
         }
         
@@ -49,7 +47,7 @@
         .btn-text { background-color: #007bff; color: white; }
         .btn-call { background-color: #28a745; color: white; }
         
-        /* SERVICES GRID */
+        /* SERVICES SECTION */
         .container { padding: 30px 15px; text-align: center; }
         .services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 20px; }
         .service-card { background: white; padding: 15px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border: 1px solid #ddd; }
@@ -68,7 +66,7 @@
 <body>
 
     <div class="header">
-        <img src="logo.png" alt="Goodnight Check Engine Light" class="logo-banner">
+        <img src="logo.png" alt="Goodnight Check Engine Light" class="logo-original">
         
         <h1 style="margin:0; font-size: 24px; padding: 0 10px;">Goodnight Check Engine Light</h1>
         <p style="color: #d4af37; font-style: italic; margin: 5px 0;">Performance, Fabrication & Repair</p>
@@ -87,7 +85,7 @@
             <div class="service-card"><span class="service-icon">👨‍🏭</span><h3>Fabrication</h3><p>Custom Metal Work</p></div>
             <div class="service-card"><span class="service-icon">⚙️</span><h3>Engine Builds</h3><p>Full Rebuilds</p></div>
             <div class="service-card"><span class="service-icon">🏎️</span><h3>Performance</h3><p>Upgrades & Tuning</p></div>
-            <div class="service-card"><span class="service-icon">📋</span><h3>Preventative</h3><p>General Maintenance</p></div>
+            <div class="service-card"><span class="service-icon">📋</span><h3>Preventative</h3><p>Maintenance</p></div>
             <div class="service-card"><span class="service-icon">💻</span><h3>Diagnostics</h3><p>System Scans</p></div>
             <div class="service-card"><span class="service-icon">🛑</span><h3>Brakes</h3><p>Pads & Rotors</p></div>
             <div class="service-card"><span class="service-icon">⚡</span><h3>Electrical</h3><p>Batteries & Starters</p></div>
